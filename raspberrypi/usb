@@ -7,4 +7,6 @@ add "dtoverlay=dwc2"
 
 create a new file named "ssh" in the boot folder
 
-SSH raspberrypi.local
+SSH raspberrypi's hostname.local
+like my raspberrypi's hostname is raspberrypizero2w
+so ssh root@raspberrypizero2w.local is the right cmd
