@@ -1,0 +1,10 @@
+edit /boot/firmware/cmdline.txt
+add "modules-load=dwc2,g_ether" after "rootwait"
+
+edit /boot/firmware/config.txt
+down to [all] 
+add "dtoverlay=dwc2"
+
+create a new file named "ssh" in the boot folder
+
+SSH raspberrypi.local
