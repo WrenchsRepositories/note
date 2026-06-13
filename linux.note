@@ -1,6 +1,24 @@
-#linux @shellscript @alias
+#linux 
 
-##Add shellscript alias to .bashrc
-1. Edit .bashrc
-2. Add scriptname() {[space]bash[space]"${SCRIPT_PATH}"[space]"$@";[space]}
-3. Run source ~/.bashrc
+##Add shellscript alias to .bashrc @shellscript @alias
+1.	Edit .bashrc
+2.	Add scriptname() {[space]bash[space]"${SCRIPT_PATH}"[space]"$@";[space]}
+3.	Run source ~/.bashrc
+
+
+#raspberrypi 
+
+##Using mDNS ssh raspberrypi @ssh @usb
+1.	Edit /boot/firmware/cmdline.txt
+	and add "modules-load=dwc2,g_ether" after "rootwait"
+
+2.	Edit /boot/firmware/config.txt
+	down to [all] 
+	add "dtoverlay=dwc2"
+
+3.	Create a new file named "ssh" in the /boot folder
+	SSH raspberrypi's hostname.local
+	**
+	like my raspberrypi's hostname is raspberrypizero2w
+	so ssh root@raspberrypizero2w.local is the right cmd
+	**
