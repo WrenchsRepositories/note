@@ -1,8 +1,0 @@
-alias
-{
-	add alias:
-	[
-		edit .bashrc
-		add get_time() { bash "$HOME/tools/shell/get_time" "$@"; }
-	]
-}

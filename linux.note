@@ -1,0 +1,6 @@
+#linux @shellscript @alias
+
+##Add shellscript alias to .bashrc
+1. Edit .bashrc
+2. Add scriptname() {[space]bash[space]"${SCRIPT_PATH}"[space]"$@";[space]}
+3. Run source ~/.bashrc
