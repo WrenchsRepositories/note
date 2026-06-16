@@ -5,6 +5,13 @@
 2.	Add scriptname() {[space]bash[space]"${SCRIPT_PATH}"[space]"$@";[space]}
 3.	Run source ~/.bashrc
 
+#ssh @ssh
+
+##Key @sshkey
+ssh-keygen -t ed25519 -C "description"
+
+##Remote host identification has changed
+ssh-keygen -R IP
 
 #raspberrypi 
 
