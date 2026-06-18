@@ -1,9 +1,23 @@
-#linux 
+#linux command
 
 ##Add shellscript alias to .bashrc @shellscript @alias
 1.	Edit .bashrc
 2.	Add scriptname() {[space]bash[space]"${SCRIPT_PATH}"[space]"$@";[space]}
 3.	Run source ~/.bashrc
+
+#arch @arch
+
+##Wireless WIFI connect @archinstall @wifi
+1.iwctl 
+2.device list 
+3.station wlan0 scan 
+4.station wlan0 get-networks
+5.station wlan0 connect wifi-name 
+6.exit 
+
+##Sync system time
+1.timedatectl set-ntp true
+2.timedatectl status
 
 #ssh @ssh
 
