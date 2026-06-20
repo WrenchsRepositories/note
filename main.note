@@ -1,3 +1,9 @@
+#mac command
+
+## restart DNS @hosts @restart
+sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+
+
 #linux command
 
 ##Add shellscript alias to .bashrc @shellscript @alias
