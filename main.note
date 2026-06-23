@@ -1,4 +1,13 @@
-#mac command
+#mac 
+
+##install homebrew in china
+1.add 
+export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.ustc.edu.cn/brew.git"
+export HOMEBREW_BOTTLE_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles"
+export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
+to .zshrc or .bashrc
+
+2./bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 ## restart DNS @hosts @restart
 sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
