@@ -55,6 +55,12 @@ ssh-keygen -R IP
 3.	Create a new file named "ssh" in the /boot folder
 	SSH raspberrypi's hostname.local
 	**
+
+#git
+
+##Log only show your own commit
+ git log --author="$(git config user.name)" --pretty=oneline
+
 	like my raspberrypi's hostname is raspberrypizero2w
 	so ssh root@raspberrypizero2w.local is the right cmd
 	**
