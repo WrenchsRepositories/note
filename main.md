@@ -1,24 +1,21 @@
-# CONTENTS
+# ***CONTENTS***
 - [CONTENTS](#contents)
 - [MAC](#mac)
-  - [Install homebrew China node mirror](#install-homebrew-china-node-mirror)
-  - [Restart DNS](#restart-dns)
+  - [Homebrew](#homebrew)
+  - [MacOS command](#macos-command)
 - [LINUX](#linux)
   - [Linux command](#linux-command)
-    - [Add shellscript alias to .bashrc](#add-shellscript-alias-to-bashrc)
 - [RASPBERRYPI](#raspberrypi)
-  - [Using mDNS ssh raspberrypi](#using-mdns-ssh-raspberrypi)
+  - [Connect](#connect)
 - [TOOLS](#tools)
   - [git](#git)
-    - [Log only show your own commit](#log-only-show-your-own-commit)
-    - [Add git lola](#add-git-lola)
   - [ssh](#ssh)
-    - [Key](#key)
-    - [Remote host identification has changed](#remote-host-identification-has-changed)
 
-# MAC 
+# ***MAC*** 
 
-## Install homebrew China node mirror
+## ***Homebrew***
+
+### Install homebrew China node mirror
 1. Add to .shellrc
 ```shell
 export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.ustc.edu.cn/brew.git"
@@ -30,7 +27,9 @@ export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-## Restart DNS
+## ***MacOS command***
+
+### Restart DNS
 ```shell
 sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 ```
@@ -38,7 +37,7 @@ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 
 # LINUX
 
-## Linux command
+## ***Linux command***
 
 ### Add shellscript alias to .bashrc
 1.	Edit .shellrc
@@ -46,9 +45,11 @@ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 3.	Run source ~/.bashrc
 
 
-# RASPBERRYPI 
+# ***RASPBERRYPI***
 
-## Using mDNS ssh raspberrypi
+## ***Connect***
+
+### Using mDNS ssh raspberrypi
 1.	Edit /boot/firmware/cmdline.txt
 	and add `modules-load=dwc2,g_ether` after "rootwait"
 
@@ -60,10 +61,14 @@ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 	SSH raspberrypi's hostname.local
 
 
-# TOOLS
+# ***TOOLS***
 
-## git
+## ***git***
 
+### Change editor
+```shell
+git config --global core.editor "vim"
+```
 ### Log only show your own commit
 ```shell
 git log --author="$(git config user.name)" --pretty=oneline
@@ -73,7 +78,7 @@ git log --author="$(git config user.name)" --pretty=oneline
 git config --global alias.lola "log --graph --decorate --oneline --all" 
 ```
 
-## ssh 
+## ***ssh***
 
 ### Key 
 ```shell
