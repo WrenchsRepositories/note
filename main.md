@@ -44,6 +44,13 @@ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 2.	Add `scriptname() {[space]bash[space]"${SCRIPT_PATH}"[space]"$@";[space]}`
 3.	Run source ~/.bashrc
 
+## ***Linux tools***
+1. `btop`
+2. `jq`
+3. `exa`
+4. `lolcat`(toys)
+5. `cmatrix`(toys)
+
 
 # ***RASPBERRYPI***
 
