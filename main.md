@@ -5,6 +5,7 @@
   - [MacOS command](#macos-command)
 - [LINUX](#linux)
   - [Linux command](#linux-command)
+  - [Linux tools](#linux-tools)
 - [RASPBERRYPI](#raspberrypi)
   - [Connect](#connect)
 - [TOOLS](#tools)
@@ -48,8 +49,11 @@ sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 1. `btop`
 2. `jq`
 3. `exa`
-4. `lolcat`(toys)
-5. `cmatrix`(toys)
+4. `fastfetch`
+5. `fcitx5`
+6. `yazi`
+7. `lolcat`(toys)
+8. `cmatrix`(toys)
 
 
 # ***RASPBERRYPI***
