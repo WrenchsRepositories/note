@@ -35,6 +35,10 @@ export HOMEBREW_API_DOMAIN="https://mirrors.ustc.edu.cn/homebrew-bottles/api"
 sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 ```
 
+## ***Poweroff***
+```shell
+sudo shutdown -h now
+```
 
 # LINUX
 
