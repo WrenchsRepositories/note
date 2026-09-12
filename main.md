@@ -10,6 +10,7 @@
   - [Connect](#connect)
 - [TOOLS](#tools)
   - [git](#git)
+  - [vim](#vim)
   - [ssh](#ssh)
 
 # ***MAC*** 
@@ -91,6 +92,16 @@ git log --author="$(git config user.name)" --pretty=oneline
 ### Add git lola
 ```shell
 git config --global alias.lola "log --graph --decorate --oneline --all" 
+```
+
+## ***vim***
+
+### Multiple modify
+```
+/word
+cgn
+new word
+.
 ```
 
 ## ***ssh***
